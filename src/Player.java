@@ -1,8 +1,16 @@
 public class Player implements PlayerInt
 {
+    private final char letter;
+    private final String name;
+
+    public Player(char letter, String name) {
+        this.letter = letter;
+        this.name   = name;
+    }
+
     @Override
     public char getLetter() {
-        return 0;
+        return letter;
     }
 
     @Override
@@ -12,11 +20,10 @@ public class Player implements PlayerInt
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public void reset() {
-
     }
 }
